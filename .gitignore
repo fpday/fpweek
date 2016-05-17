@@ -5,8 +5,6 @@
 /.stack-work/
 __MACOSX/
 _cache/
-site	TAGS
 site
-_site/
 .#*
 TAGS
