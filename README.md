@@ -13,4 +13,6 @@ The `master` branch contains the source files and a submodule containing the `gh
 * Link it locally to simplify command: `ln -s <path-to-exe> site`
 * Run `./site build` to build pages into `_site`
 
+## Credits
 
+* La Baule: http://www.guillaume-frechin.fr/gallery/la-baule/
