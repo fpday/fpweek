@@ -79,7 +79,7 @@ cssContext =
 slugify :: Item String -> Compiler String
 slugify item = do
   metadata <- getMetadata (itemIdentifier item)
-  let slug  = dropExtension . takeFileName . toFilePath
+  let slug  = ("post-" ++) . dropExtension . takeFileName . toFilePath
   return $ slug (itemIdentifier item)
 
 --------------------------------------------------------------------------------
