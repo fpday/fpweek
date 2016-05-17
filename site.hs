@@ -46,6 +46,14 @@ main = do
           index <- loadAndApplyTemplate "templates/index.html" (homeCtx postsMenu) item
           relativizeUrls index
 
+    create ["css/main.css"] $ do
+        route idRoute
+        compile $ do
+          em <- makeItem ""
+          posts <- chronological =<< loadAll "_posts/*"
+          let listOfPosts = listField "posts" postCtx (return posts) <> cssContext
+          loadAndApplyTemplate "templates/main.css" listOfPosts em
+
     match "templates/*" $ compile templateCompiler
 
 
@@ -60,6 +68,12 @@ postCtx =
   escaped   "title"            <>
   field     "post-id" slugify     <>
   dateField "date" "%B %e, %Y" <>
+  defaultContext
+
+cssContext :: Context String
+cssContext =
+  constField     "navborder"  "3"        <>
+  constField     "navborder_active"  "6" <>
   defaultContext
 
 slugify :: Item String -> Compiler String
