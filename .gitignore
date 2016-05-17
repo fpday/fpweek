@@ -1,2 +1,12 @@
+*~
+\#*
+*.hi
+*.o
+/.stack-work/
+__MACOSX/
+_cache/
+site	TAGS
+site
 _site/
-.DS_Store
+.#*
+TAGS
