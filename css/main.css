@@ -13,11 +13,15 @@ nav .p-post-2016-05-16-intro { border-color: white; }
 #post-2016-05-16-intro a { color: white; }
 #post-2016-05-16-intro .sectiondivider { color: white; }
 
-nav .p-post-2016-05-16-outro { border-color: gray; }
-#post-2016-05-16-outro { background-color: gray !important; color: white; }
+nav .p-post-2016-05-16-outro { border-color: #001156; }
+#post-2016-05-16-outro { background-color: #001156 !important; color: white; }
 #post-2016-05-16-outro a { color: white; }
-#post-2016-05-16-outro .sectiondivider { color: gray; }
+#post-2016-05-16-outro .sectiondivider { color: #001156; }
 
+nav .p-post-2016-05-17-contact { border-color: lightgray; }
+#post-2016-05-17-contact { background-color: lightgray !important; color: #001156; }
+#post-2016-05-17-contact a { color: #001156; }
+#post-2016-05-17-contact .sectiondivider { color: lightgray; }
 
 
 /* ----- code, syntax highlighting, etc ----- */
@@ -47,8 +51,7 @@ pre {
 /* ----- base elements ----- */
 
 img {
-  max-width:100%!important;
-  height:auto;
+  max-width:100%;
   vertical-align:middle;
 }
 
@@ -249,6 +252,22 @@ nav ul li:hover, nav ul li.active {
 .longlist { font-size: 14px !important; }
 .longlist li { margin-bottom: 3px; }
 
+#contact-form label {
+    display: inline-block;
+    margin-left: 10px;
+    text-align: right;
+}
+
+#contact-form input {
+    display: inline-block;
+    margin-left: 10px;
+    vertical-align: center;
+}
+
+#contact-form textarea {
+    display: inline-block;
+    vertical-align: top;
+}
 
 
 /* ----- fork on github banner ----- */
