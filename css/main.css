@@ -9,7 +9,7 @@ html { box-sizing: border-box; }
 /* ----- per-post colors! ----- */
 
 nav .p-post-2016-05-16-intro { border-color: white; }
-#post-2016-05-16-intro {  background: url(/img/la-baule.jpg) !important; color: white; }
+#post-2016-05-16-intro {  background: url(la-baule.jpg) !important; color: white; }
 #post-2016-05-16-intro a { color: white; }
 #post-2016-05-16-intro .sectiondivider { color: white; }
 
