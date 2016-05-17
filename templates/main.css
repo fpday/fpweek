@@ -14,7 +14,6 @@ nav .p-$post-id$ { border-color: $bg$; }
 #$post-id$ .sectiondivider { color: $bg$; }
 $endfor$
 
-
 /* ----- code, syntax highlighting, etc ----- */
 
 code, pre { font-family: Monaco, Menlo, Consolas, "Courier New", monospace; }
@@ -42,8 +41,7 @@ pre {
 /* ----- base elements ----- */
 
 img {
-  max-width:100%!important;
-  height:auto;
+  max-width:100%;
   vertical-align:middle;
 }
 
@@ -244,6 +242,22 @@ nav ul li:hover, nav ul li.active {
 .longlist { font-size: 14px !important; }
 .longlist li { margin-bottom: 3px; }
 
+#contact-form label {
+    display: inline-block;
+    margin-left: 10px;
+    text-align: right;
+}
+
+#contact-form input {
+    display: inline-block;
+    margin-left: 10px;
+    vertical-align: center;
+}
+
+#contact-form textarea {
+    display: inline-block;
+    vertical-align: top;
+}
 
 
 /* ----- fork on github banner ----- */
